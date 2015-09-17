@@ -1,0 +1,16 @@
+@(title: String) @*(content: Html)*@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>@title</title>
+        <mimeMap fileExtension=".woff" mimeType="application/font-woff" />
+        <mimeMap fileExtension=".woff2" mimeType="application/font-woff" />
+        @*<meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>*@
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("/public","stylesheets/main.min.css")">
+    </head>
+    <body>
+        <div id="root"></div>
+        @playscalajs.html.scripts("client")
+    </body>
+</html>

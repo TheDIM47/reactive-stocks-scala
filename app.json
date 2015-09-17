@@ -1,0 +1,6 @@
+{
+  "name": "Reactive Stocks",
+  "description": "Scala+Akka+Play+React for Heroku.",
+  "image": "heroku/scala",
+  "addons": [  ]
+}
